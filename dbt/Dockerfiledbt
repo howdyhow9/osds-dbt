@@ -1,0 +1,8 @@
+FROM ghcr.io/dbt-labs/dbt-spark:1.7.1
+
+WORKDIR /dbt
+
+COPY dbt/ .
+
+# Install dependencies
+RUN dbt deps
