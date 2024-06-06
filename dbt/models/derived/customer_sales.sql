@@ -4,7 +4,8 @@
 ) }}
 
 
-SELECT count(customerid) as customer_count FROM
-{{ source('osdp_sales', 'customer') }};
+SELECT customerid, count(customerid) as customer_count FROM
+{{ source('osdp_sales', 'customer') }}
+group by customerid;
 
 
