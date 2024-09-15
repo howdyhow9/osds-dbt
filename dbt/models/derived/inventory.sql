@@ -14,6 +14,7 @@ SELECT
     Reorder_Level,
     (In_Stock - Reorder_Level) AS Stock_To_Reorder_Difference,
     Last_Sold
+from
 {{ source('osd_store', 'inventory') }}
 WHERE
     In_Stock < Reorder_Level -- Identifies items that need reordering
