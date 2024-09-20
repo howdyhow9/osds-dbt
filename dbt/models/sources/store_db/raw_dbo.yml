@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: osd_store
+  - name: raw_storedb
     schema: raw_dbo
     tables:
       - name: inventory

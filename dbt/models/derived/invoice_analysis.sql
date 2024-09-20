@@ -4,8 +4,8 @@
 ) }}
 
 select *
-from {{ source('osd_store', 'invoice_totals') }}  a
-join {{ source('osd_store', 'invoice_itemized') }}  a
+from {{ source('raw_storedb', 'invoice_totals') }}  a
+join {{ source('raw_storedb', 'invoice_itemized') }}  a
 on a.Invoice_Number = b.Invoice_Number limit 5;
 
 
