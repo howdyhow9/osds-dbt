@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: osd_store
+    schema: raw_dbo
+    tables:
+      - name: inventory
+      - name: inventory_in
+      - name: invoice_itemized
+      - name: invoice_onhold
+      - name: invoice_totals
+      - name: history_inventory
+      - name: history_inventory_in
+      - name: history_invoice_itemized
+      - name: history_invoice_onhold
+      - name: history_invoice_totals
