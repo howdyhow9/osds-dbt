@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_reataurant_db
+    schema: osd_delta_lake_catalog
+    tables:
+      - name: menu
+      - name: orders
+      - name: data_dictionary

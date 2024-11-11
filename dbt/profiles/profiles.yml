@@ -4,7 +4,7 @@ osdp:
       host: spark-thrift-service.spark-apps.svc.cluster.local
       method: thrift
       port: 10000
-      schema: cln_dbo
+      schema: cln_restaurant
       threads: 4
       type: spark
   target: dev
