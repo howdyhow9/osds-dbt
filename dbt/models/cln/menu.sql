@@ -6,4 +6,4 @@
 
 
 select menu_item_id, item_name, category, price
-from {{ source('raw_reataurant_db', 'menu') }}
+from {{ source('raw_restaurant_db', 'menu') }}

@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: raw_reataurant_db
-    schema: osd_delta_lake_catalog
+  - name: raw_restaurant_db
+    schema: restaurant
     tables:
       - name: menu
       - name: orders
